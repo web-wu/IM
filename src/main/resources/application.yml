@@ -1,0 +1,26 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: IM
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://123.57.193.24:3306/MI?useSSL=false&useUnicode=yes&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/im?useSSL=false&useUnicode=yes&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: innosen
+#    password: 136436
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+#  global-config:
+#    db-config:
+#      logic-delete-field: isDelete
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+
+
